@@ -1,0 +1,496 @@
+body
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*WEBPAGE SCROLLBAR EFFECTS CODE STARTS HERE*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(16, 16, 16); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(1, 98, 30); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0e0131; 
+  }
+/*WEBPAGE SCROLLBAR EFFECTS CODE ENDS HERE*/
+
+
+.hr1,.hr2,.hr3
+{
+    width:100%;
+    height: 5px;
+    background-color: #870a0a;
+}
+
+.logo
+{
+    border-radius: 50%;
+    border-style: double;
+    width: 80px;
+    border-width: 15px;
+    border-color: #2f0202;
+    margin-left: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(8, 8, 8, 0.738);
+}
+.logo:hover
+{
+    background-color: #0e0e0e;
+    color: antiquewhite;
+    border-color: #fdfafa;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.logolink
+{
+    text-decoration: none;
+}
+
+.h1
+{
+    margin-left: 130px;
+    margin-top: -97px;
+    color:rgb(8, 8, 8);
+    font-style: normal;
+    font-family:   times new roman;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 250px;
+    border-style: double;
+    border-width: 15px;
+    border-bottom: 0px;
+    border-radius: 25px;
+    border-color: #2f0202;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+}
+
+.h1:hover
+{
+    background-color: #0e0e0e;
+    color: antiquewhite;
+    border-color: #fdfafa;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.nav
+{
+    background-color: #340202;
+    height: 50px;
+    width: 100%;
+}
+
+.nav1
+{
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: 50px;
+    font-family: times new roman;
+}
+.nav1:hover
+{
+    text-decoration: underline;
+    color: rgb(230, 251, 4);
+}
+
+
+
+
+/*GLOWING REGISTER BUTTON CSS CODE STARTS HERE!!!!!!!!!!!!!!!!!!*/
+#a7
+{
+    color: rgb(225, 227, 230);
+    float: right;
+    margin-right: 5px;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: times new roman;
+    text-align: center;
+}
+#a7:hover
+{
+    text-decoration: underline;  
+    color: rgb(230, 251, 4); 
+}
+
+#a7 {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+#a7::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#a7:active {
+    color: #000
+}
+
+#a7:active:after {
+    background: transparent;
+}
+
+#a7:hover::before {
+    opacity: 1;
+}
+
+#a7:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/*GLOWING REGISTER BUTTON CSS CODE ENDS HERE!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+
+/*SLIDEDOWN CODE FOR NAVIGATION*/
+#jq1
+     {
+    border-style: groove;
+    border-radius: 25px;
+    border-width: 5px;
+    color: aliceblue;
+    padding: 15px;
+    background-color: #999797;
+    margin-left: 35%;
+    border-color: #0c0c0c;
+    width: 50%;
+    display: none;
+     }
+
+#th_h1
+{
+    font-size: 25px;
+    color: #0e0e0e;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.list1,.list2,.list3
+{
+    border-style: groove;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #0e0e0e;
+    color: antiquewhite;
+    font-family: verdana;
+    font-size: 15px;
+    width: fit-content;
+}
+/*SLIDEDOWN CODE END FOR NAVIGATION*/
+
+/*LEFT SIDE EXTRA LINK SCROLL TABLE STARTS HERE!!!!!!!!!!!!!!!!!!!*/
+.tab2
+{
+    float: left;
+    margin-left: 25px;
+    margin-top: 100px;
+    overflow-y: scroll;
+    display: flex;
+    max-height: 50%;
+}
+.tdd1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: groove;
+    border-width: 2px;
+    border-top-color: #767474;
+}
+.a101:hover
+{
+    border-width: 5px;
+    cursor: pointer;
+    color: #3103b0;
+    font-size: 17px;
+}
+.a101
+{
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    font-size: 15px;
+}
+.th1
+{
+    color: #d00404;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -10px;
+    font-size: 20px;
+}
+/*LEFT SIDE EXTRA LINK SCROLL TABLE ENDS HERE!!!!!!!!!!!!!!!!!!!*/
+ 
+
+
+
+
+
+.h22
+{
+    margin-left: 15%;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fe2104;
+    width: fit-content;
+    background-color: #cccdcb; 
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #0c0c0c;
+}
+.h3
+{
+    margin-left: 15%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #224002;
+}
+
+
+.h4
+{
+    font-size: 30px;
+    font-family: geneva;
+    color: #f40303;
+    margin-left: 200px;
+}
+.img1
+{
+   margin-left: 4%;
+   width: 505;
+   height: 50%;
+   border-style: groove;
+   border-radius: 10px;
+   border-color: #396d01;
+   border-width: 5px;
+}
+
+.tab1
+{
+    float: right;
+    margin-top: -34%;
+    margin-right: 100px;
+    line-height: 300%;
+    width: 40%;
+}
+.td1
+{
+    margin-right: 100px;
+    color: #f40303;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: arial;
+}
+.td2
+{
+    font-size: 18px;
+    font-family: arial;
+}
+
+.h6
+{
+    color: #f40303;
+    margin-left: 15%;
+    margin-top: -8%
+}
+.p1
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #636262;
+}
+
+
+/*PHOTO GALLERY CSS CODE STARTS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.gallery-section
+{
+    background-image: url('guni_img.jpg');
+}
+.gallery
+{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    border-style: groove;
+    border-color: #396d01;
+    border-radius: 10px;
+    border-width: 20px;
+}
+.gallery div
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.gallery::-webkit-scrollbar
+{
+    display: none;
+}
+.gallery-wrap
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% auto;
+}
+#back_btn,#next_btn
+{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/*PHOTO GALLERY CSS CODE ENDS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+
+/*ENDING BOX CODE STARTS HERE!!!!!!!!!!!!!!!!!!1*/
+
+.div1
+{
+    background-image: linear-gradient(to right,rgb(69, 5, 5),rgb(16, 16, 16),rgb(69, 5, 5));
+    border-style: groove;
+    border-color: brown;
+    border-radius: 10px;
+}
+.h4
+{
+    background-color: rgb(144, 144, 159);
+    color: #1f1d1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 30%;
+    font-size: 25px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.div2
+{
+    margin-left: 80px;
+    margin-top: -20px;
+    color: antiquewhite;
+}
+
+.div3
+{
+    margin-top: -190px;
+    margin-left: 50%;
+
+}
+.h5
+{
+    background-color: rgb(144, 144, 159);
+    color: #1f1d1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 60%;
+    font-size: 25px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: -100px;
+}
+.div4
+{
+   color: antiquewhite;
+   margin-top: -20px;
+   margin-left: -25px;
+}
+.aa2,.aa3
+{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.aa2:hover
+{
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.aa3:hover
+{
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+/*ENDING BOX CODE ENDS HERE!!!!!!!!!!!!!!!!!!1*/
+
+
+.rights
+{
+    background-color: #020800;
+    color: wheat;
+    font-size: 25px;
+    font-family: calibri;
+}

@@ -1,0 +1,401 @@
+body
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*WEBPAGE SCROLLBAR EFFECTS CODE STARTS HERE*/
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(16, 16, 16); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(1, 98, 30); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0e0131; 
+  }
+/*WEBPAGE SCROLLBAR EFFECTS CODE ENDS HERE*/
+
+
+
+.hr1,.hr2,.hr3
+{
+    width:100%;
+    height: 5px;
+    background-color: #870a0a; 
+}
+
+.logo
+{
+    border-radius: 50%;
+    border-style: double;
+    width: 80px;
+    border-width: 15px;
+    border-color: #2f0202;
+    margin-left: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(8, 8, 8, 0.738);
+}
+.logo:hover
+{
+    background-color: #0e0e0e;
+    color: antiquewhite;
+    border-color: #fdfafa;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.logolink
+{
+    text-decoration: none;
+}
+
+.h1
+{
+    margin-left: 130px;
+    margin-top: -97px;
+    color:rgb(8, 8, 8);
+    font-style: normal;
+    font-family:   times new roman;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 250px;
+    border-style: double;
+    border-width: 15px;
+    border-bottom: 0px;
+    border-radius: 25px;
+    border-color: #2f0202;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+}
+
+.h1:hover
+{
+    background-color: #0e0e0e;
+    color: antiquewhite;
+    border-color: #fdfafa;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+.nav
+{
+    background-color: #340202;
+    height: 50px;
+    width: 100%;
+}
+
+.nav1
+{
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    line-height: 50px;
+    font-family: times new roman;
+
+}
+.nav1:hover
+{
+    text-decoration: underline;
+    color: rgb(230, 251, 4);
+}
+
+
+/*GLOWING REGISTER BUTTON CSS CODE STARTS HERE!!!!!!!!!!!!!!!!!!*/
+#a7
+{
+    color: rgb(225, 227, 230);
+    float: right;
+    margin-right: 5px;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: times new roman;
+    text-align: center;
+}
+#a7:hover
+{
+    text-decoration: underline;  
+    color: rgb(230, 251, 4); 
+}
+
+#a7 {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#a7::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+#a7:active {
+    color: #000
+}
+
+#a7:active:after {
+    background: transparent;
+}
+
+#a7:hover::before {
+    opacity: 1;
+}
+
+#a7:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/*GLOWING REGISTER BUTTON CSS CODE ENDS HERE!!!!!!!!!!!!!!!!!!*/
+
+
+
+
+/*SLIDEDOWN CODE FOR NAVIGATION*/
+#jq1
+     {
+    border-style: groove;
+    border-radius: 25px;
+    border-width: 5px;
+    color: aliceblue;
+    padding: 15px;
+    background-color: #999797;
+    margin-left: 35%;
+    border-color: #0c0c0c;
+    width: 50%;
+    display: none;
+     }
+
+#th_h1
+{
+    font-size: 25px;
+    color: #0e0e0e;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.list1,.list2,.list3
+{
+    border-style: groove;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #0e0e0e;
+    color: antiquewhite;
+    font-family: verdana;
+    font-size: 15px;
+    width: fit-content;
+}
+/*SLIDEDOWN CODE END FOR NAVIGATION*/
+
+
+
+/*ALL COURSES CSS CODES STARTS HERE!!!!!!!!*/
+
+
+.h3,.h4
+{
+    margin-left: 10px;
+    color: rgb(1, 1, 40);
+    border-style: double;
+    border-radius: 25px;
+    border-color: black;
+    border-width: 10px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #dadbd8;
+    width: 50%;
+}
+.h3:hover,.h4:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.h20,.h21,.h22,.h23,.h24,.h25,.h26,.h27,.h28,.h29,.h30,.h31,.h32,.h33,.h34,.h35,.h36
+{
+    margin-left: 40px;
+    color: rgb(23, 3, 63);
+    border-style: double;
+    border-radius: 10px;
+    border-color: rgb(15, 14, 14);
+    border-width: 5px;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(225, 224, 223);
+    width: 45%;
+    margin-top: -25px;
+    display: none;
+}
+.h20:hover,.h21:hover,.h22:hover,.h23:hover,.h24:hover,.h25:hover,.h26:hover,.h27:hover,.h28:hover,.h29:hover,.h30:hover,.h31:hover,.h32:hover,.h33:hover,.h34:hover,.h35:hover,.h36:hover
+{
+    cursor: pointer;
+    color: #185502;
+    font-size: 30px;
+}
+
+#course1,#course2
+{
+   text-decoration: none;
+    color: rgb(55, 24, 2);
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: fit-content;
+}
+#course1:hover,#course2:hover
+{
+    text-decoration: underline;
+    color: rgb(2, 39, 206);
+    font-size: 22px;
+}
+.courses,.courses1,.courses2,.courses3,.courses4,.courses5,.courses6,.courses7,.courses8,.courses9,.courses10,.courses11,.courses12,.courses13,.courses14,.courses15,.courses16
+{
+    display: none;
+}
+/*ALL COURSES CSS CODES ENDS HERE!!!!!!!!*/
+
+
+.hr4
+{
+    width: 100%;
+    height: 15px;
+    background-image: linear-gradient(to right,rgb(251, 248, 248),rgb(11, 11, 11),rgb(252, 249, 249));
+}
+
+
+
+
+
+
+
+/*ENDING BOX CODE STARTS HERE!!!!!!!!!!!!!!!!!!1*/
+
+.div1
+{
+    background-image: linear-gradient(to right,rgb(69, 5, 5),rgb(16, 16, 16),rgb(69, 5, 5));
+    border-style: groove;
+    border-color: brown;
+    border-radius: 10px;
+}
+.h6
+{
+    background-color: rgb(144, 144, 159);
+    color: #1f1d1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 30%;
+    font-size: 25px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.div2
+{
+    margin-left: 80px;
+    margin-top: -20px;
+    color: antiquewhite;
+}
+
+.div3
+{
+    margin-top: -190px;
+    margin-left: 50%;
+
+}
+.h5
+{
+    background-color: rgb(144, 144, 159);
+    color: #1f1d1d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 60%;
+    font-size: 25px;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: -100px;
+}
+.div4
+{
+   color: antiquewhite;
+   margin-top: -20px;
+   margin-left: -25px;
+}
+.aa2,.aa3
+{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.aa2:hover
+{
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.aa3:hover
+{
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+/*ENDING BOX CODE ENDS HERE!!!!!!!!!!!!!!!!!!1*/
+
+
+
+
+
+.rights
+{
+    background-color: #020800;
+    color: wheat;
+    font-size: 25px;
+    font-family: calibri;
+}
